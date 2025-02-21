@@ -23,4 +23,4 @@ const userSchema = new mongoose.Schema({
     posts:[{type:mongoose.Schema.Types.ObjectId, ref:'Posts'}],
     bookmarks:[{types:mongoose.Schema.Types.ObjectId, ref:'Posts'}]
 }, {timestamps:true});
-export const User = mongoose.model('User', userSchema)
+export default User = mongoose.model('User', userSchema)
